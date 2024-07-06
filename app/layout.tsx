@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "TechbuddyAI",
@@ -18,7 +19,7 @@ export default function RootLayout({
         <Header />
         {children}
       </body>
-      {/* Toaster */}
+      <Toaster duration={8000} position="bottom-left" />
     </html>
   );
 }

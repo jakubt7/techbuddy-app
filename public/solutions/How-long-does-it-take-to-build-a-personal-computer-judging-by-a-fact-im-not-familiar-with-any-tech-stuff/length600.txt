@@ -1,0 +1,23 @@
+Building a personal computer can take around 2-3 hours for someone unfamiliar with tech stuff. Here's a simple guide to help you:
+
+1. **Prepare the Components**: Lay out all the parts - motherboard, CPU, RAM, GPU, storage, power supply, case, etc. Make sure you have all the necessary components.
+
+2. **Read the Manuals**: Each component comes with a manual. Take some time to read through them. They provide step-by-step instructions specific to that part.
+
+3. **Assemble the Motherboard**: Start by installing the CPU, then the RAM, and finally the GPU if it's not integrated. Connect the power supply, fans, and any other cables.
+
+4. **Install the Motherboard**: Place the motherboard in the case and secure it with screws. Connect the case cables to the motherboard (power button, USB ports, etc.).
+
+5. **Add Other Components**: Install the storage devices (SSD/HDD) and connect them to the motherboard. Install any additional cards like Wi-Fi or sound cards.
+
+6. **Cable Management**: Organize the cables inside the case to improve airflow and aesthetics. Use zip ties to keep them tidy.
+
+7. **Power Up**: Connect the power supply to the motherboard and other components. Double-check all connections. Press the power button and see if it boots up.
+
+8. **Install Operating System**: If everything is working, you can install your preferred operating system (Windows, macOS, Linux) using a USB drive.
+
+9. **Updates and Drivers**: After installing the OS, make sure to update it and install the necessary drivers for your components. This ensures everything runs smoothly.
+
+10. **Enjoy Your New PC**: Once everything is set up, you can start using your new personal computer for work, gaming, or any other tasks you have in mind.
+
+Remember, take your time, follow the instructions carefully, and don't rush the process. Building a PC can be a fun and rewarding experience, even for beginners.

@@ -1,0 +1,17 @@
+To quickly test if your computer has viruses, you can follow these steps:
+
+1. Update Your Antivirus Software: Make sure your antivirus software is up to date. If you don't have one, consider installing a reputable antivirus program.
+
+2. Run a Full Scan: Open your antivirus software and run a full system scan. This will check all files and programs on your computer for any viruses or malware.
+
+3. Check Task Manager: Press Ctrl + Shift + Esc (or Ctrl + Alt + Delete then select Task Manager) to open Task Manager. Look for any suspicious processes or high CPU/Memory usage that could indicate a virus.
+
+4. Use Malware Removal Tools: Consider using additional malware removal tools like Malwarebytes to scan for and remove any potential threats.
+
+5. Update Your Operating System: Ensure your operating system is up to date with the latest security patches to protect against vulnerabilities that viruses may exploit.
+
+6. Be Cautious with Email Attachments and Downloads: Avoid opening email attachments or downloading files from unknown sources as they may contain viruses.
+
+7. Backup Your Important Files: It's always a good practice to regularly backup your important files to an external drive or cloud storage in case of a virus attack.
+
+By following these steps, you can quickly check for viruses on your computer and take necessary actions to keep your system secure.

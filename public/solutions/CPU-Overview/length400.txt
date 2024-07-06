@@ -1,0 +1,7 @@
+A CPU stands for Central Processing Unit. It is like the brain of a computer. The CPU is responsible for carrying out instructions from programs and performing basic arithmetic, logic, control, and input/output operations specified by those instructions. In simpler terms, the CPU is the component in a computer that processes data and performs calculations.
+
+Tips:
+1. The CPU is often referred to as the processor.
+2. The speed of a CPU is measured in gigahertz (GHz) and determines how quickly it can process data.
+3. CPUs can have multiple cores, which allow them to perform tasks more efficiently by handling multiple processes simultaneously.
+4. When choosing a computer or laptop, consider the CPU's performance to ensure it meets your needs for speed and multitasking.

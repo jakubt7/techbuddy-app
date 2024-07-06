@@ -13,7 +13,6 @@ Do the following steps one after the other without skipping any or ending early:
 5. If the ${solution} is a prompt and not a complete tech solution, call solution-generator to write a solution based on the prompt.
 5. For every ${solution} you get from the solution-generator, do the following:
     - Write the content of the solution to `${path}/${solution-title}/length<outputLength>.txt.
-    - Download the solution to a file at `${path}/${solution-title}/length<outputLength>.txt.
 
 ---
 name: solution-generator

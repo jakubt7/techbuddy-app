@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Select,
   SelectContent,
@@ -12,6 +12,8 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Frame } from "@gptscript-ai/gptscript";
 import renderEventMessage from "@/lib/renderEventMessage";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 const solutionPath = "public/solutions";
 
@@ -23,6 +25,7 @@ const SolutionGenerator = () => {
   const [outputFinish, setOutputFinish] = useState<boolean | null>(null);
   const [currentTool, setCurrentTool] = useState("");
   const [events, setEvents] = useState<Frame[]>([]);
+  const router = useRouter();
 
   async function generateOutput() {
     setOutputStart(true);
@@ -88,6 +91,22 @@ const SolutionGenerator = () => {
       });
     }
   }
+
+  useEffect(() => {
+    if (outputFinish) {
+      toast.success("Solution generated successfuly"),
+        {
+          action: (
+            <Button
+              onClick={() => router.push("/solutions")}
+              className="bg-slate-600 ml-auto"
+            >
+              View Solutions
+            </Button>
+          ),
+        };
+    }
+  }, [outputFinish, router]);
 
   return (
     <div className="container flex flex-col">

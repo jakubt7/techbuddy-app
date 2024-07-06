@@ -1,6 +1,5 @@
 import { Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import SolutionGenerator from "@/components/SolutionGenerator";
 
@@ -12,7 +11,7 @@ export default function Home() {
           <Bot height={250} width={250}/>
 
           <Button asChild className="px-20 py-10 text-xl">
-            <Link href="/stories">Explore generated solutions</Link>
+            <Link href="/solutions">Explore generated solutions</Link>
           </Button>
         </div>
 
