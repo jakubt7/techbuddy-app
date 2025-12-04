@@ -1,40 +1,26 @@
-tools: solution-generator, mkdir, sys.write, sys.read, sys.download, sys.abort
+tools: solution-generator, sys.abort
 description: A tool that provides simple, understandable IT solutions.
-args: solution: The solution to output for a user. Must be simple.
+args: solution: The problem or scenario provided by a user. Keep the language simple.
 args: outputLength: The maximum length of a solution.
-args: path: The path that the solution should be written to
 
 Do the following steps one after the other without skipping any or ending early:
 
 1. If the ${solution} contains a lot of details that will exceed the ${outputLength}, abort the process and suggest selecting a bigger solution length.
-2. If the ${solution} could not be provided because of the lack of details, suggest giving more details.
-3. Come up with an appropriate title for the solution based on the ${solution}.
-4. Create the `${path}/${solution-title}` directory if it does not already exist. Replace any spaces in the title with - when creating the directory.
-5. If the ${solution} is a prompt and not a complete tech solution, call solution-generator to write a solution based on the prompt.
-5. For every ${solution} you get from the solution-generator, do the following:
-    - Write the content of the solution to `${path}/${solution-title}/length<outputLength>.txt.
+2. If the ${solution} could not be provided because of the lack of details, abort and suggest giving more details.
+3. Come up with an appropriate human-readable title for the solution based on the ${solution}.
+4. If the ${solution} is a prompt and not a complete tech solution, call solution-generator to write a solution based on the prompt. The output must be written for someone unfamiliar with technology.
+5. Respond with a single-line JSON object that looks like {"title":"<title>","content":"<solution>"} so it can be parsed by the UI. Do not add any extra commentary around the JSON.
 
 ---
 name: solution-generator
-description: Writes a solution for a user unfamilliar with IT. Returns a simple solution.
+description: Writes a solution for a user unfamiliar with IT. Returns a simple solution.
 args: prompt: The prompt to use for the solution
 args: outputLength: The length that the solution should have.
 temperature: 0.5
 
-You are the techbuddy. That means you help people unfamilliar with technology. 
-Your main goal is to write in a simple lanuguage and to be as understandable as possible. 
-With your judgement write a solution for a question based on ${prompt} that is no longer than {$outputLength}. 
+You are the techbuddy. That means you help people unfamiliar with technology.
+Your main goal is to write in a simple language and to be as understandable as possible.
+With your judgement write a solution for a question based on ${prompt} that is no longer than ${outputLength}.
 Along with the solution try to explain things in a detailed way with tips and tricks.
 Try to avoid using only abbreviations, try also using the full names.
-
----
-name: mkdir
-tools: sys.write
-description: Creates a specified directory
-args: dir: Path to the directory to be created. Will create parent directories.
-
-#!bash
-
-mkdir -p "${dir}"
-
 

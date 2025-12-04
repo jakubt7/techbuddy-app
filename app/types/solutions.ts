@@ -1,5 +1,8 @@
 export interface Solution {
-    solution: string;
-    length: number;
-    content: string;
+  id: string;
+  title: string;
+  prompt: string;
+  content: string;
+  length: number;
+  createdAt: string;
 }

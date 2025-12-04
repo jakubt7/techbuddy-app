@@ -18,8 +18,8 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         <Header />
         {children}
+        <Toaster duration={8000} position="bottom-left" />
       </body>
-      <Toaster duration={8000} position="bottom-left" />
     </html>
   );
 }
